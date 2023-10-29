@@ -1,0 +1,6 @@
+framework module Pods_BudjeteProgram {
+  umbrella header "Pods-BudjeteProgram-umbrella.h"
+
+  export *
+  module * { export * }
+}

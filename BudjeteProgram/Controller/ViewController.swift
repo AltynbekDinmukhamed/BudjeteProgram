@@ -110,7 +110,8 @@ extension ViewController {
 //MARK: -Extension Objc functions-
 extension ViewController {
     @objc func addTapped(_ sender: UIButton) {
-        
+        let vc = SecoundViewController()
+        navigationController?.present(vc, animated: true)
     }
 }
 

@@ -19,6 +19,7 @@
 		560E76472AEE54B9001AEB07 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 560E76452AEE54B9001AEB07 /* Inter-Regular.ttf */; };
 		560E76492AEE66C9001AEB07 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560E76482AEE66C9001AEB07 /* HistoryTableViewCell.swift */; };
 		560E764B2AEED51C001AEB07 /* SecoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560E764A2AEED51C001AEB07 /* SecoundViewController.swift */; };
+		560E764D2AEED726001AEB07 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560E764C2AEED726001AEB07 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		560E76452AEE54B9001AEB07 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
 		560E76482AEE66C9001AEB07 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		560E764A2AEED51C001AEB07 /* SecoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecoundViewController.swift; sourceTree = "<group>"; };
+		560E764C2AEED726001AEB07 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7AD3C4F7DD77CD49C9FF4169 /* Pods_BudjeteProgram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BudjeteProgram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2F8185A2A9C6BA9756FA6DB /* Pods-BudjeteProgram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BudjeteProgram.debug.xcconfig"; path = "Target Support Files/Pods-BudjeteProgram/Pods-BudjeteProgram.debug.xcconfig"; sourceTree = "<group>"; };
 		E8F3A1689AD1C0D28562E889 /* Pods-BudjeteProgram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BudjeteProgram.release.xcconfig"; path = "Target Support Files/Pods-BudjeteProgram/Pods-BudjeteProgram.release.xcconfig"; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				560E76312AEE5155001AEB07 /* Assets.xcassets */,
 				560E76332AEE5155001AEB07 /* LaunchScreen.storyboard */,
 				560E76362AEE5155001AEB07 /* Info.plist */,
+				560E764C2AEED726001AEB07 /* Constants.swift */,
 			);
 			path = BudjeteProgram;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				560E762D2AEE5154001AEB07 /* ViewController.swift in Sources */,
 				560E76292AEE5154001AEB07 /* AppDelegate.swift in Sources */,
 				560E76402AEE5317001AEB07 /* BudgeteHeaderView.swift in Sources */,
+				560E764D2AEED726001AEB07 /* Constants.swift in Sources */,
 				560E762B2AEE5154001AEB07 /* SceneDelegate.swift in Sources */,
 				560E76492AEE66C9001AEB07 /* HistoryTableViewCell.swift in Sources */,
 			);

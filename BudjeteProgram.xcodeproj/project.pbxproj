@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3975582B46A8A5C265A88C0E /* Pods_BudjeteProgram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD3C4F7DD77CD49C9FF4169 /* Pods_BudjeteProgram.framework */; };
 		560A806C2AF241CB00F5C96C /* SecoundControllerBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560A806B2AF241CB00F5C96C /* SecoundControllerBottomView.swift */; };
+		560A80712AF24A0700F5C96C /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 560A806F2AF24A0700F5C96C /* first.png */; };
+		560A80722AF24A0700F5C96C /* secound.png in Resources */ = {isa = PBXBuildFile; fileRef = 560A80702AF24A0700F5C96C /* secound.png */; };
 		560E76292AEE5154001AEB07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560E76282AEE5154001AEB07 /* AppDelegate.swift */; };
 		560E762B2AEE5154001AEB07 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560E762A2AEE5154001AEB07 /* SceneDelegate.swift */; };
 		560E762D2AEE5154001AEB07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560E762C2AEE5154001AEB07 /* ViewController.swift */; };
@@ -25,6 +27,9 @@
 
 /* Begin PBXFileReference section */
 		560A806B2AF241CB00F5C96C /* SecoundControllerBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecoundControllerBottomView.swift; sourceTree = "<group>"; };
+		560A806D2AF2499700F5C96C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		560A806F2AF24A0700F5C96C /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		560A80702AF24A0700F5C96C /* secound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = secound.png; sourceTree = "<group>"; };
 		560E76252AEE5154001AEB07 /* BudjeteProgram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BudjeteProgram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		560E76282AEE5154001AEB07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		560E762A2AEE5154001AEB07 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,9 +61,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		560A806E2AF249F300F5C96C /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				560A806F2AF24A0700F5C96C /* first.png */,
+				560A80702AF24A0700F5C96C /* secound.png */,
+			);
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
 		560E761C2AEE5154001AEB07 = {
 			isa = PBXGroup;
 			children = (
+				560A806E2AF249F300F5C96C /* Screenshots */,
+				560A806D2AF2499700F5C96C /* README.md */,
 				560E76272AEE5154001AEB07 /* BudjeteProgram */,
 				560E76262AEE5154001AEB07 /* Products */,
 				F069C25D44E1E2268A332F35 /* Pods */,
@@ -205,10 +221,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				560E76462AEE54B9001AEB07 /* Inter-SemiBold.ttf in Resources */,
+				560A80722AF24A0700F5C96C /* secound.png in Resources */,
 				560E76472AEE54B9001AEB07 /* Inter-Regular.ttf in Resources */,
 				560E76352AEE5155001AEB07 /* LaunchScreen.storyboard in Resources */,
 				560E76432AEE5474001AEB07 /* Manrope-Bold.ttf in Resources */,
 				560E76322AEE5155001AEB07 /* Assets.xcassets in Resources */,
+				560A80712AF24A0700F5C96C /* first.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -69,6 +69,63 @@ class SecoundViewController: UIViewController {
         lbl.font = UIFont(name: "Inter-Regular", size: 17)
         return lbl
     }()
+    
+    let metkiLbl: UILabel = {
+        let lbl = UILabel()
+        lbl.text = "Метки"
+        lbl.alpha = 0.5
+        lbl.textColor = .black
+        lbl.font = UIFont(name: "Inter-Regular", size: 13)
+        return lbl
+    }()
+    
+    let fetchBtn: UIButton = {
+        let btn = UIButton()
+        btn.setTitle("Для FetchLab", for: .normal)
+        btn.titleLabel?.font = UIFont(name: "Inter-Regular", size: 14)
+        btn.setTitleColor(.black, for: .normal)
+        btn.backgroundColor = UIColor(red: 0.949, green: 0.957, blue: 0.969, alpha: 1)
+        btn.clipsToBounds = true
+        btn.layer.cornerRadius = 32 / 2
+        return btn
+    }()
+    
+    let addMetkaBtn: UIButton = {
+        let btn = UIButton()
+        btn.setTitle("Добавить метку", for: .normal)
+        btn.titleLabel?.font = UIFont(name: "Inter-Regular", size: 14)
+        btn.setTitleColor(UIColor(red: 0.141, green: 0.443, blue: 0.345, alpha: 1), for: .normal)
+        btn.backgroundColor = .white
+        btn.layer.borderWidth = 1
+        btn.layer.borderColor = UIColor(red: 0.827, green: 0.89, blue: 0.871, alpha: 1).cgColor
+        btn.clipsToBounds = true
+        btn.layer.cornerRadius = 32 / 2
+        return btn
+    }()
+    
+    let dataLbl: UILabel = {
+        let lbl = UILabel()
+        lbl.text = "Дата"
+        lbl.alpha = 0.5
+        lbl.textColor = .black
+        lbl.font = UIFont(name: "Inter-Regular", size: 13)
+        return lbl
+    }()
+    
+    let dataDetailLbl: UILabel = {
+        let lbl = UILabel()
+        lbl.text = "Сегодня, 12 июня 2020"
+        lbl.textColor = .black
+        lbl.font = UIFont(name: "Inter-Regular", size: 17)
+        return lbl
+    }()
+    
+    let bottomView: SecoundControllerBottomView = {
+        let view = SecoundControllerBottomView()
+        //view.backgroundColor = UIColor(red: 0.137, green: 0.435, blue: 0.341, alpha: 1)
+        return view
+    }()
+    
     //MARK: -LifeCycle-
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -134,6 +191,12 @@ extension SecoundViewController {
         view.addSubview(secoundTextStack)
         view.addSubview(commentLbl)
         view.addSubview(supermarketsLbl)
+        view.addSubview(metkiLbl)
+        view.addSubview(fetchBtn)
+        view.addSubview(addMetkaBtn)
+        view.addSubview(dataLbl)
+        view.addSubview(dataDetailLbl)
+        view.addSubview(bottomView)
     }
     private func setUpConstraints() {
         firstBtn.snp.makeConstraints { make in
@@ -179,6 +242,36 @@ extension SecoundViewController {
         supermarketsLbl.snp.makeConstraints { make in
             make.top.equalTo(commentLbl.snp.bottom).offset(5)
             make.leading.equalToSuperview().offset(32)
+        }
+        metkiLbl.snp.makeConstraints { make in
+            make.top.equalTo(supermarketsLbl.snp.bottom).offset(24)
+            make.leading.equalToSuperview().offset(32)
+        }
+        fetchBtn.snp.makeConstraints { make in
+            make.top.equalTo(metkiLbl.snp.bottom).offset(6)
+            make.leading.equalToSuperview().offset(32)
+            make.width.equalTo(112)
+            make.height.equalTo(32)
+        }
+        addMetkaBtn.snp.makeConstraints { make in
+            make.top.equalTo(metkiLbl.snp.bottom).offset(6)
+            make.leading.equalTo(fetchBtn.snp.trailing).offset(6)
+            make.width.equalTo(112)
+            make.height.equalTo(32)
+        }
+        dataLbl.snp.makeConstraints { make in
+            make.top.equalTo(fetchBtn.snp.bottom).offset(24)
+            make.leading.equalToSuperview().offset(32)
+        }
+        dataDetailLbl.snp.makeConstraints { make in
+            make.top.equalTo(dataLbl.snp.bottom).offset(5)
+            make.leading.equalToSuperview().offset(32)
+        }
+        bottomView.snp.makeConstraints { make in
+            make.bottom.equalToSuperview()
+            make.leading.equalToSuperview()
+            make.trailing.equalToSuperview()
+            make.height.equalTo(140)
         }
     }
 }
